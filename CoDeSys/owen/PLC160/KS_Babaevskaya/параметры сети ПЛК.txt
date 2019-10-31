@@ -1,0 +1,216 @@
+œÀ 160-220¿.Ã
+ModBus (Master)
+Visibility: No
+	RS-485-1[SLOT]
+	Communication speed: 57600
+	Parity: NO PARITY CHECK
+	Data bits: 8 bits
+	Stop length: One stop bit
+	Interface type: RS485
+	Frame oriented: RTU
+	Framing time ms: 0
+	Visibility: No
+
+	Universal Modbus device[var]
+	ModuleIP: 10:0:0:102
+	Max timeout: 20
+	TCPport: 502
+	NetMode: Serial
+	ModuleSlaveAddress: 2
+	Work mode: both
+	Polling time ms: 100
+	Visibility: No
+	Amount Repeat: 0
+	Byte Sequence: Trace_mode
+	
+		32bit output module (Ã”110-220.32–)
+		name: DD2_DO
+		Register Address: 0
+		Command: Force multiple coils (0x0f)
+		Visibility: No
+
+	Universal Modbus device[var]
+	ModuleIP: 10:0:0:103
+	Max timeout: 20
+	TCPport: 502
+	NetMode: Serial
+	ModuleSlaveAddress: 3
+	Work mode: both
+	Polling time ms: 100
+	Visibility: No
+	Amount Repeat: 0
+	Byte Sequence: Trace_mode
+	
+		32bit output module (Ã”110-220.32–)
+		name: DD3_DO
+		Register Address: 0
+		Command: Force multiple coils (0x0f)
+		Visibility: No
+
+	Universal Modbus device[var]
+	ModuleIP: 10:0:0:104
+	Max timeout: 20
+	TCPport: 502
+	NetMode: Serial
+	ModuleSlaveAddress: 4
+	Work mode: both
+	Polling time ms: 100
+	Visibility: No
+	Amount Repeat: 0
+	Byte Sequence: Trace_mode
+	
+		32bit output module (Ã”110-220.32–)
+		name: DD4_DO
+		Register Address: 0
+		Command: Force multiple coils (0x0f)
+		Visibility: No
+
+	Universal Modbus device[var]
+	ModuleIP: 10:0:0:105
+	Max timeout: 20
+	TCPport: 502
+	NetMode: Serial
+	ModuleSlaveAddress: 5
+	Work mode: both
+	Polling time ms: 100
+	Visibility: No
+	Amount Repeat: 0
+	Byte Sequence: Trace_mode
+	
+		32bit input module (ÃB110-220.32ƒÕ)
+		name: DD5_DI
+		Register Address: 99
+		Command: Read input registers (0x04)
+		Visibility: No
+
+	Universal Modbus device[var]
+	ModuleIP: 10:0:0:106
+	Max timeout: 20
+	TCPport: 502
+	NetMode: Serial
+	ModuleSlaveAddress: 6
+	Work mode: both
+	Polling time ms: 100
+	Visibility: No
+	Amount Repeat: 0
+	Byte Sequence: Trace_mode
+	
+		32bit input module (ÃB110-220.32ƒÕ)
+		name: DD6_DI
+		Register Address: 99
+		Command: Read input registers (0x04)
+		Visibility: No
+
+	Universal Modbus device[var]
+	ModuleIP: 10:0:0:107
+	Max timeout: 20
+	TCPport: 502
+	NetMode: Serial
+	ModuleSlaveAddress: 7
+	Work mode: both
+	Polling time ms: 100
+	Visibility: No
+	Amount Repeat: 0
+	Byte Sequence: Trace_mode
+	
+		32bit input module (ÃB110-220.32ƒÕ)
+		name: DD7_DI
+		Register Address: 99
+		Command: Read input registers (0x04)
+		Visibility: No
+
+	Universal Modbus device[var]
+	ModuleIP: 10:0:0:108
+	Max timeout: 20
+	TCPport: 502
+	NetMode: Serial
+	ModuleSlaveAddress: 8
+	Work mode: both
+	Polling time ms: 100
+	Visibility: No
+	Amount Repeat: 0
+	Byte Sequence: Trace_mode
+	
+		32bit input module (ÃB110-220.32ƒÕ)
+		name: DD8_DI
+		Register Address: 99
+		Command: Read input registers (0x04)
+		Visibility: No
+
+	Universal Modbus device[var]
+	ModuleIP: 10:0:0:109
+	Max timeout: 20
+	TCPport: 502
+	NetMode: Serial
+	ModuleSlaveAddress: 9
+	Work mode: both
+	Polling time ms: 100
+	Visibility: No
+	Amount Repeat: 0
+	Byte Sequence: Trace_mode
+	
+		32bit input module (ÃB110-220.32ƒÕ)
+		name: DD9_DI
+		Register Address: 99
+		Command: Read input registers (0x04)
+		Visibility: No
+
+	Universal Modbus device[var]
+	ModuleIP: 10:0:0:110
+	Max timeout: 20
+	TCPport: 502
+	NetMode: Serial
+	ModuleSlaveAddress: 10
+	Work mode: both
+	Polling time ms: 100
+	Visibility: No
+	Amount Repeat: 0
+	Byte Sequence: Trace_mode
+	
+		Register output module (Ã”110-224.8») - ‚˚ıÓ‰¿Œ1
+		name: DD10_AO0
+		Register Address: 0
+		Command: Read input registers (0x10)
+		Visibility: No
+
+		Register output module (Ã”110-224.8») - ‚˚ıÓ‰¿Œ2
+		name: DD10_AO1
+		Register Address: 1
+		Command: Read input registers (0x10)
+		Visibility: No
+
+		Register output module (Ã”110-224.8») - ‚˚ıÓ‰¿Œ3
+		name: DD10_AO2
+		Register Address: 2
+		Command: Read input registers (0x10)
+		Visibility: No
+
+		Register output module (Ã”110-224.8») - ‚˚ıÓ‰¿Œ4
+		name: DD10_AO3
+		Register Address: 3
+		Command: Read input registers (0x10)
+		Visibility: No
+
+		Register output module (Ã”110-224.8») - ‚˚ıÓ‰¿Œ5
+		name: DD10_AO4
+		Register Address: 4
+		Command: Read input registers (0x10)
+		Visibility: No
+
+		Register output module (Ã”110-224.8») - ‚˚ıÓ‰¿Œ6
+		name: DD10_AO5
+		Register Address: 5
+		Command: Read input registers (0x10)
+		Visibility: No
+
+		Register output module (Ã”110-224.8») - ‚˚ıÓ‰¿Œ7
+		name: DD10_AO6
+		Register Address: 6
+		Command: Read input registers (0x10)
+		Visibility: No
+
+		Register output module (Ã”110-224.8») - ‚˚ıÓ‰¿Œ8
+		name: DD10_AO7
+		Register Address: 7
+		Command: Read input registers (0x10)
+		Visibility: No
