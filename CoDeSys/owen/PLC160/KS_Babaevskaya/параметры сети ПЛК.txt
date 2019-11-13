@@ -1,3 +1,4 @@
+DD1
 ÏËÊ160-220À.Ì
 ModBus (Master)
 Visibility: No
@@ -11,6 +12,8 @@ Visibility: No
 	Framing time ms: 0
 	Visibility: No
 
+	DD2
+	ÌÓ110-220.32Ð
 	Universal Modbus device[var]
 	ModuleIP: 10:0:0:102
 	Max timeout: 20
@@ -29,6 +32,8 @@ Visibility: No
 		Command: Force multiple coils (0x0f)
 		Visibility: No
 
+	DD3
+	ÌÓ110-220.32Ð
 	Universal Modbus device[var]
 	ModuleIP: 10:0:0:103
 	Max timeout: 20
@@ -47,6 +52,8 @@ Visibility: No
 		Command: Force multiple coils (0x0f)
 		Visibility: No
 
+	DD4
+	ÌÓ110-220.32Ð
 	Universal Modbus device[var]
 	ModuleIP: 10:0:0:104
 	Max timeout: 20
@@ -65,6 +72,8 @@ Visibility: No
 		Command: Force multiple coils (0x0f)
 		Visibility: No
 
+	DD5
+	ÌÂ110-220.32ÄÍ
 	Universal Modbus device[var]
 	ModuleIP: 10:0:0:105
 	Max timeout: 20
@@ -83,6 +92,8 @@ Visibility: No
 		Command: Read input registers (0x04)
 		Visibility: No
 
+	DD6
+	ÌÂ110-220.32ÄÍ
 	Universal Modbus device[var]
 	ModuleIP: 10:0:0:106
 	Max timeout: 20
@@ -101,6 +112,8 @@ Visibility: No
 		Command: Read input registers (0x04)
 		Visibility: No
 
+	DD7
+	ÌÂ110-220.32ÄÍ
 	Universal Modbus device[var]
 	ModuleIP: 10:0:0:107
 	Max timeout: 20
@@ -119,6 +132,8 @@ Visibility: No
 		Command: Read input registers (0x04)
 		Visibility: No
 
+	DD8
+	ÌÂ110-220.32ÄÍ
 	Universal Modbus device[var]
 	ModuleIP: 10:0:0:108
 	Max timeout: 20
@@ -137,6 +152,8 @@ Visibility: No
 		Command: Read input registers (0x04)
 		Visibility: No
 
+	DD9
+	ÌÂ110-220.32ÄÍ
 	Universal Modbus device[var]
 	ModuleIP: 10:0:0:109
 	Max timeout: 20
@@ -155,6 +172,8 @@ Visibility: No
 		Command: Read input registers (0x04)
 		Visibility: No
 
+	DD10
+	ÌÓ110-224.8È
 	Universal Modbus device[var]
 	ModuleIP: 10:0:0:110
 	Max timeout: 20
