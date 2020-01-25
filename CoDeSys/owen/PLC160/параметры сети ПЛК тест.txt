@@ -172,7 +172,7 @@ Universal Modbus device[var]
 
 		Real output module (получение сигнала типа real (в панели - dword))
 		name: -
-		Register Address: 10256
+		Register Address: 10256   /*Для PFW, для PSW = 256*/
 		Command: Preset multiply Registers (0x10)
 		Visibility: no
 
