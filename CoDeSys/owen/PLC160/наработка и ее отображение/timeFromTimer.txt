@@ -1,0 +1,22 @@
+FUNCTION_BLOCK testST
+VAR_INPUT
+	 input: DWORD;
+END_VAR
+VAR_OUTPUT
+	days: WORD;
+	hours: WORD;
+	minutes: WORD;
+	seconds: WORD;
+END_VAR
+VAR
+	temp: DWORD;
+END_VAR
+
+
+days:= DWORD_TO_WORD (input / (60 * 60 * 24));
+temp:= input MOD (60 * 60 * 24);
+hours:= DWORD_TO_WORD (temp / (60 * 60));
+ temp:= temp MOD (60 * 60);
+minutes:= DWORD_TO_WORD (temp / 60);
+temp:= temp MOD 60;
+ seconds:= DWORD_TO_WORD (temp);

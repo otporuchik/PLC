@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int totalSec = 151473;
+    int days = 0;
+    int hours = 0;
+    int min = 0;
+    int sec = 0;
+    int temp = 0;
+    
+    days = totalSec / (60 * 60 * 24);
+    temp = totalSec % (60 * 60 * 24);
+    
+    hours = temp / (60 * 60);
+    temp = temp % (60 * 60);
+    
+    min = temp / 60;
+    temp = temp % 60;
+    
+    sec = temp;
+    
+    printf("days: %d\nhours: %d\nmin: %d\nsec: %d\n ", days, hours, min, sec);
+    
+    return 0;
+}
