@@ -1,0 +1,47 @@
+Сети:
+1. ПЛК-1(master) - СП310Р(slave). RS-232 - PLC-port, Modbus RTU.
+Панель в щите АСУ-1.
+
+
+2. ПЛК-1(master) - ПЛК-2(slave) - СП310Р(slave). Ethernet, Modbus TCP. Сеть ПЛК.
+Выносные панели.
+адреса:
+PLC1 - 192.168.100.1 = C0:A8:64:1
+PLC2 - 192.168.100.2 = C0:A8:64:2
+panel - 192.168.100.3 = C0:A8:64:3
+
+в slave модуле ТСР не забудь в Modbus FIX добавить ТСР.
+
+
+***********************************
+
+3. СП310Р(master) - ПР102(slave). Panel-download port - RS-485-1. Modbus RTU.
+Опрос БМТ.
+net settings:
+slave addr: 1
+скорость: 115200
+проверка четности: нет
+стоп бит: 1
+биты данных: 8
+Variables in PR102:
+toRead:
+1. blinkingVar (uint, read only first bite) 512.0
+2. counter (uint) 513
+toWrite:
+1. makeItBlink (uint, 514.0)
+
+4. ПЛК-1(slave) - ПЛК-2(master). RS-232-debug - AC-3(rs232 to rs485) - RS485
+Отдать на диспетчеризацию из ПЛК-1.
+net settings:
+slave addr: 1
+скорость: 115200
+проверка четности: нет
+стоп бит: 1
+биты данных: 8
+Variables in PLC1:
+toRead:
+1. TwoByte (uint, reg=0, reg 0.0 will blinging).
+Variables in PLC2:
+1. readTwoBytesFromPLC1_10ms.0
+2. readTwoBytesFromPLC1_100ms.0
+3. readTwoBytesFromPLC1_500ms.0
